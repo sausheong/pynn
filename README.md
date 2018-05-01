@@ -1,12 +1,12 @@
 # # Building simple artificial neural networks with TensorFlow, Keras, PyTorch and MXNet/Gluon
 
-A few weeks ago I [went through the steps of building a very simple neural network](https://sausheong.github.io/posts/how-to-build-a-simple-artificial-neural-network-with-go/) and implemented it from scratch in Go. While I am a Go enthusiast, I must admit that if I want to focus on using deep learning to solve problems, it's probably not the best tool given the many deep learning frameworks that are already out there.
+A few weeks ago I [went through the steps of building a very simple neural network](https://sausheong.github.io/posts/how-to-build-a-simple-artificial-neural-network-with-go/) and implemented it from scratch in Go. However there are many deep learning frameworks that are already available, so doing it from scratch isn't normally what you'll do if you want to use deep learning as a tool to solve problems.
 
-There are many ways to compare deep learning frameworks. Here’s a relatively recent (September 2017) [ranking by Data Incubator]([data-science-blogs/deep-learning-libraries.md at master · thedataincubator/data-science-blogs · GitHub](https://github.com/thedataincubator/data-science-blogs/blob/master/deep-learning-libraries.md)) that gives an interesting popularity ranking based on their Github, Stack Overflow and Google search results scores.
+The question is with the many that deep learning frameworks, which one should I use? There are many ways to compare deep learning frameworks. Here’s a relatively recent (September 2017) [ranking by Data Incubator]([data-science-blogs/deep-learning-libraries.md at master · thedataincubator/data-science-blogs · GitHub](https://github.com/thedataincubator/data-science-blogs/raw/master/deep-learning-libraries.md)) that gives an interesting popularity ranking based on their Github, Stack Overflow and Google search results scores.
 
 ![](imgs/table.png)
 
-From the results, it’s quite clear that TensorFlow is easily the most popular framework and with Keras now being a part of TensorFlow itself, it looks like things won’t change much in the near future. Also, almost all popular deep learning frameworks have Python APIs, so it seems a combination of TensorFlow/Keras with Python seems the way to go.
+From the results, it’s quite clear that TensorFlow is easily the most popular framework and with Keras now being a part of TensorFlow itself, things won’t change much in the near future. Also, almost all popular deep learning frameworks have Python APIs, so a combination of TensorFlow/Keras with Python seems the way to go.
 
 Nonetheless, I was curious about some of the other frameworks and so I began a mini-journey to write the same (or almost the same) simple artificial neural network I did in a few of these frameworks for comparison.
 
@@ -24,7 +24,9 @@ All the implementations below follow the same generic steps:
 4. Define the `predict` function
 5. Create a main that allows the user to first train using the training dataset (60,000 images) then predict using the test dataset (10,000 images)
 
-Let’s see how to implement this in TensorFlow first.
+This handwriting recognition of digits with the MNIST dataset is so often used in deep learning tutorials it's almost the 'hello world' of writing deep learning programs. As a disclaimer though, the implementations you see below are not optimized in any way and are not the definitive way of doing it. In fact there are many other more optimal ways of doing it, these are just a few.
+
+Now let's start and see how to implement this in TensorFlow first.
 
 # TensorFlow
 TensorFlow was originally developed by researchers and engineers who worked on the Google Brain project for internal use, and open sourced in 2015. It’s the most popular deep learning framework to date by far.
