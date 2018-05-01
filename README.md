@@ -4,7 +4,7 @@ A few weeks ago I [went through the steps of building a very simple neural netwo
 
 There are many ways to compare deep learning frameworks. Here’s a relatively recent (September 2017) [ranking by Data Incubator]([data-science-blogs/deep-learning-libraries.md at master · thedataincubator/data-science-blogs · GitHub](https://github.com/thedataincubator/data-science-blogs/blob/master/deep-learning-libraries.md)) that gives an interesting popularity ranking based on their Github, Stack Overflow and Google search results scores.
 
-![](imgs/F5D90134-B72E-4155-A26E-C2C7668E67F9.png)
+![](imgs/table.png)
 
 From the results, it’s quite clear that TensorFlow is easily the most popular framework and with Keras now being a part of TensorFlow itself, it looks like things won’t change much in the near future. Also, almost all popular deep learning frameworks have Python APIs, so it seems a combination of TensorFlow/Keras with Python seems the way to go.
 
